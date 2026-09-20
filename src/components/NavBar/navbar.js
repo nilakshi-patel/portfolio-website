@@ -15,10 +15,17 @@ const Navbar = () => {
                 <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
                 <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Portfolio</Link>
             </div>
-            <button className="desktopMenuBtn" onClick={() => {
-                document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-            }}>
-                <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me</button>
+            <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="desktopMenuBtn"
+            >
+                <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me
+            </Link>
             
             <button
                 type="button"

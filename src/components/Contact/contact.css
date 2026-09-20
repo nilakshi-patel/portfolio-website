@@ -21,6 +21,15 @@
     font-weight: 300;
 }
 
+.emailLink {
+    color: yellow;
+    text-decoration: none;
+}
+
+.emailLink:hover {
+    text-decoration: underline;
+}
+
 .contactForm {
     margin: 1rem;
     display: flex;
