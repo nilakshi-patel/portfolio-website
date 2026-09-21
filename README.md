@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## EmailJS setup
+
+Copy `.env.example` to `.env.local` and replace its values with the Service ID, Template ID, and Public Key from the same EmailJS account. The Service ID must belong to the account that owns the selected template. Restart `npm start` after changing `.env.local`.
+
 ## Available Scripts
 
 In the project directory, you can run:

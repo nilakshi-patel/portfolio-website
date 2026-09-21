@@ -71,3 +71,34 @@
     width: 3rem;
     margin: 0 0.75rem;
 }
+
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0.75rem;
+    text-decoration: none;
+}
+
+.socialIcon {
+    box-sizing: border-box;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.65rem;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.githubIcon {
+    background: #050505;
+    border-radius: 50%;
+}
+
+.linkedinIcon {
+    background: #0a66c2;
+    border-radius: 0.5rem;
+}
+
+.socialLink:hover .socialIcon {
+    transform: scale(1.08);
+}

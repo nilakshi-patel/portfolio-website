@@ -1,24 +1,30 @@
 import './contact.css';
-import facebookIcon from '../../assets/facebook-icon.png';
-import twitterIcon from '../../assets/twitter.png';
-import youtubeIcon from '../../assets/youtube.png';
 import instagramIcon from '../../assets/instagram.png';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Contact = () => {
     const form = useRef();
+    const [status, setStatus] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setStatus('Sending...');
 
-        emailjs.sendForm('service_9sj1x4v', 'template_98x8lli', form.current, 'XhX0pJtZIKP5AV0rsSMl0')
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
             .then((result) => {
                 console.log(result.text);
                 e.target.reset();
-                alert('Email Sent !');
+                setStatus('Email sent successfully.');
             }, (error) => {
-                console.log(error.text);
+                console.error('EmailJS error:', error.text || error);
+                setStatus(`Could not send email: ${error.text || 'Please try again.'}`);
             });
     };
     
@@ -32,11 +38,34 @@ const Contact = () => {
                     <input type="text" className="email" placeholder='Your Email' name='from_email' />
                     <textarea name="message" placeholder='Your Message' rows={5} className='msg' ></textarea>
                     <button type="submit" value="Send" className='submitBtn'>Submit</button>
+                    {status && <p role="status">{status}</p>}
                     <div className="links">
-                        <img src={facebookIcon} alt="Facebook" className="link" />
-                        <img src={twitterIcon} alt="Twitter" className="link" />
-                        <img src={youtubeIcon} alt="YouTube" className="link" />
-                        <img src={instagramIcon} alt="Instagram" className="link" />
+                        <a
+                            href="https://www.instagram.com/nilakshi1817/"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="Instagram profile"
+                        >
+                            <img src={instagramIcon} alt="Instagram" className="link" />
+                        </a>
+                        <a
+                            href="https://github.com/nilakshi-patel"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="GitHub profile"
+                            className="socialLink"
+                        >
+                            <FaGithub className="socialIcon githubIcon" aria-hidden="true" />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/nilakshi-patel-798367364"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="LinkedIn profile"
+                            className="socialLink"
+                        >
+                            <FaLinkedinIn className="socialIcon linkedinIcon" aria-hidden="true" />
+                        </a>
                     </div>
                 </form>
             </div>
