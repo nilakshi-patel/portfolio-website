@@ -1,0 +1,8 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="28" fill="#111111"/>
+  <circle cx="80" cy="80" r="55" stroke="#F4E14A" stroke-width="8"/>
+  <circle cx="80" cy="80" r="43" fill="#F4E14A" fill-opacity="0.12"/>
+  <path d="M47 104V56H58.5L80 82.5L101.5 56H113V104H99.5V76.5L80 97.5L60.5 76.5V104H47Z" fill="#F4E14A"/>
+  <path d="M54 111H106V118H54V111Z" fill="#F4E14A"/>
+  <text x="80" y="133" text-anchor="middle" fill="#F4E14A" font-size="14" font-family="Arial, sans-serif" font-weight="700">BBDU</text>
+</svg>
