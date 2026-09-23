@@ -24,6 +24,32 @@
     padding: 0 2rem;
 }
 
+.aboutInfo {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.aboutInfo div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 25px;
+    border: 1px solid #555;
+    border-radius: 12px;
+    min-width: 150px;
+}
+
+.aboutInfo strong {
+    font-size: 16px;
+}
+
+.aboutInfo span {
+    font-size: 14px;
+}
+
 .skillBars {
     margin: 1.5rem;
     width: 100vw;

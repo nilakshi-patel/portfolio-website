@@ -7,12 +7,11 @@ const Works = () => {
             <h2 className="worksTitle">My Portfolio</h2>
             <span className="worksDesc">I take pride in writing clean, efficient, and maintainable code while paying close attention to detail. As a Frontend Developer & Java Full Stack Developer, I enjoy creating responsive user interfaces and developing reliable full-stack applications using modern technologies. I am passionate about turning ideas into meaningful digital solutions and continuously improving my skills to build applications that deliver real value.</span>
 
-           {/* Skills */}
             <h2 className="skillsTitle">My Skills</h2>
 
             <div className="skillsContainer">
 
-                {/* Frontend */}
+                
                 <div className="skillCategory">
                     <h3>Frontend Development</h3>
 
@@ -24,7 +23,6 @@ const Works = () => {
                     </div>
                 </div>
 
-                {/* Backend */}
                 <div className="skillCategory">
                     <h3>Backend Development</h3>
 
@@ -35,7 +33,6 @@ const Works = () => {
                     </div>
                 </div>
 
-                {/* Database */}
                 <div className="skillCategory">
                     <h3>Database</h3>
 
@@ -45,7 +42,6 @@ const Works = () => {
                     </div>
                 </div>
 
-                {/* Tools & Design */}
                 <div className="skillCategory">
                     <h3>Tools</h3>
 

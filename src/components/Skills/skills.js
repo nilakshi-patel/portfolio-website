@@ -18,6 +18,27 @@ const Skills = () => {
                 interfaces and developing efficient full-stack applications.
             </span>
 
+             <div className="aboutInfo">
+                        <div>
+                            <strong>Education</strong>
+                            <span>BCA program</span>
+                            <strong>Babu Banarasi Das University</strong>
+
+                        </div>
+
+                        <div>
+                            <strong>Role</strong>
+                            <span>Frontend Developer & Java Full Stack Developer</span>
+                        </div>
+
+                        <div>
+                            <strong>Graduation</strong>
+                            <span>2024-2027</span>
+                        </div>
+                    </div>
+
+
+
             <div className="skillBars">
 
                 {/* Frontend Development */}
