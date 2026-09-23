@@ -1,6 +1,5 @@
 import './contact.css';
 import instagramIcon from '../../assets/instagram.png';
-import bbduLogo from '../../assets/bbdu-logo.svg';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -32,67 +31,6 @@ const Contact = () => {
     return (
         <div id='contactPage'>
             <div id="contact">
-                <div className="educationSection">
-                    <div className="sectionLabelRow">
-                        <span className="sectionLine" />
-                        <span className="sectionLabel">MY JOURNEY</span>
-                        <span className="sectionLine" />
-                    </div>
-
-                    <h2 className="educationHeading">Education</h2>
-                    <p className="educationTagline">My academic background that shaped my knowledge and skills.</p>
-
-                    <div className="educationCard">
-                        <div className="educationLogoWrap">
-                            <img src={bbduLogo} alt="Babu Banarasi Das University logo" className="educationLogo" />
-                        </div>
-
-                        <div className="educationDetails">
-                            <div className="educationMetaLabel">UNDERGRADUATION</div>
-                            <h3 className="educationSchool">Babu Banarasi Das University</h3>
-                            <p className="educationCourse">BCA (Bachelor of Computer Applications)</p>
-
-                            <div className="educationFacts">
-                                <span><strong>●</strong> 2023 - 2027</span>
-                                <span><strong>◎</strong> Lucknow, Uttar Pradesh</span>
-                            </div>
-
-                            <button type="button" className="educationBadge">Currently Pursuing</button>
-                        </div>
-
-                        <div className="educationIllustration" aria-hidden="true">
-                            <div className="gradCap">
-                                <span className="capTop" />
-                                <span className="capBody" />
-                            </div>
-                            <div className="learnText">Learn<br />Build<br />Grow</div>
-                        </div>
-                    </div>
-
-                    <div className="educationStats">
-                        <div className="statCard">
-                            <div className="statIcon">📘</div>
-                            <div className="statValue">10th Grade</div>
-                            <div className="statPercent">85.66%</div>
-                            <div className="statSub">up board </div>
-                        </div>
-
-                        <div className="statCard">
-                            <div className="statIcon">📘</div>
-                            <div className="statValue">12th Grade</div>
-                            <div className="statPercent">74.45%</div>
-                            <div className="statSub">up board </div>
-                        </div>
-
-                        <div className="statCard">
-                            <div className="statIcon">🎓</div>
-                            <div className="statValue">BCA (2023-2027)</div>
-                            <div className="statPercent">Pursuing</div>
-                            <div className="statSub">Babu Banarasi Das University</div>
-                        </div>
-                    </div>
-                </div>
-
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
                 <form className="contactForm" ref={form} onSubmit={sendEmail}>
