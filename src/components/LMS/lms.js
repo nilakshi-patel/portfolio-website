@@ -34,10 +34,14 @@ function LMS() {
           </div>
 
           <div className="lms-buttons">
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://github.com/nilakshi-patel/learning-management-system"
+             target="_blank"
+              rel="noreferrer">
               GitHub
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://your-live-demo-link.com"
+             target="_blank"
+              rel="noreferrer">
               Live Demo
             </a>
           </div>
