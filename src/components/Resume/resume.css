@@ -1,0 +1,87 @@
+.resume {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 48rem;
+    padding: 3rem 2rem;
+    border: 1px solid #555;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.resume h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.resume p {
+    max-width: 36rem;
+    margin: 0 auto;
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.resume-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 11rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    background: #ffffff;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    border-color: #ffff00;
+    background: #ffff00;
+    transform: translateY(-3px);
+}
+
+.download-btn {
+    border-color: #ffff00;
+    background: transparent;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 585px) {
+    .resume-container {
+        padding: 2rem 1rem;
+    }
+
+    .resume h2 {
+        font-size: 2.25rem;
+    }
+
+    .resume-actions {
+        flex-direction: column;
+    }
+
+    .resume-btn {
+        width: 100%;
+    }
+}

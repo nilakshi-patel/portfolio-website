@@ -3,6 +3,7 @@ import Intro from './components/Intro/intro';
 import Skills from "./components/Skills/skills";
 import LMS from "./components/LMS/lms";
 import Works from "./components/Works/works";
+import Resume from "./components/Resume/resume";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 
@@ -14,6 +15,7 @@ function App() {
             <Skills />
             <LMS />
             <Works />
+            <Resume />
             <Contact />
             <Footer />
         </div>
