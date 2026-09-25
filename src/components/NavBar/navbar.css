@@ -15,9 +15,11 @@
 }
 
 .logo {
-    object-fit: cover;
+    display: block;
+    object-fit: contain;
     height: 3rem;
-    width: 4rem;
+    width: auto;
+    max-width: 100%;
 }
 
 .desktopMenuListItem {
