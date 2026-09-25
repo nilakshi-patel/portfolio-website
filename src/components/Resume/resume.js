@@ -1,5 +1,6 @@
 import React from 'react';
 import './resume.css';
+import resumePdf from '../../assets/Nilakshi_Patel_Resume_v2.pdf';
 
 function Resume() {
     return (
@@ -12,7 +13,7 @@ function Resume() {
                 </p>
                 <div className="resume-actions">
                     <a
-                        href="/resume.pdf"
+                        href={resumePdf}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="resume-btn"
@@ -20,7 +21,7 @@ function Resume() {
                         <span aria-hidden="true">📄</span> View Resume
                     </a>
                     <a
-                        href="/resume.pdf"
+                        href={resumePdf}
                         download
                         className="resume-btn download-btn"
                     >
