@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fe801562.css",
-    "main.js": "/static/js/main.53f87819.js",
+    "main.js": "/static/js/main.89be68d9.js",
     "static/media/image.png": "/static/media/image.d61741ee78ce2102abca.png",
     "static/media/logo.png": "/static/media/logo.828ac4c1c52b60217af9.png",
     "static/media/Nilakshi_Patel_Resume_v2.pdf": "/static/media/Nilakshi_Patel_Resume_v2.52b82752d9bb5817c4b0.pdf",
@@ -9,10 +9,10 @@
     "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/index.html",
     "main.fe801562.css.map": "/static/css/main.fe801562.css.map",
-    "main.53f87819.js.map": "/static/js/main.53f87819.js.map"
+    "main.89be68d9.js.map": "/static/js/main.89be68d9.js.map"
   },
   "entrypoints": [
     "static/css/main.fe801562.css",
-    "static/js/main.53f87819.js"
+    "static/js/main.89be68d9.js"
   ]
 }

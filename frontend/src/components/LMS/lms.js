@@ -39,7 +39,7 @@ function LMS() {
               rel="noreferrer">
               GitHub
             </a>
-            <a href="https://your-live-demo-link.com"
+            <a href="https://lms-system-kn.vercel.app/"
              target="_blank"
               rel="noreferrer">
               Live Demo
