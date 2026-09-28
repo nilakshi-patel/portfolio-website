@@ -1,14 +1,29 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository is organized into separate application areas:
+
+- `frontend/` contains the React portfolio application.
+- `backend/` is reserved for backend services.
+
+## Frontend setup
+
+Run the following commands from the `frontend` directory:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The app opens at [http://localhost:3000](http://localhost:3000).
 
 ## EmailJS setup
 
-Copy `.env.example` to `.env.local` and replace its values with the Service ID, Template ID, and Public Key from the same EmailJS account. The Service ID must belong to the account that owns the selected template. Restart `npm start` after changing `.env.local`.
+Copy `frontend/.env.example` to `frontend/.env.local` and replace its values with the Service ID, Template ID, and Public Key from the same EmailJS account. The Service ID must belong to the account that owns the selected template. Restart `npm start` after changing `.env.local`.
 
 ## Available Scripts
 
-In the project directory, you can run:
+From the `frontend` directory, you can run:
 
 ### `npm start`
 
@@ -25,7 +40,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `frontend/build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
